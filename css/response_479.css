@@ -1,0 +1,117 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .first_section .slogan
+    {
+        font-size: 12px;
+    }
+
+
+    .first_section .data
+    {
+        height: 240px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 16px;
+
+        padding-right: 24px;
+    }
+
+
+    .first_section .img
+    {
+        top: 100px;
+        left: -40px;
+
+        width: 400px;
+    }
+
+
+    .first_section .logo
+    {
+        bottom: -44px;
+
+        width: 88px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 72px;
+        padding: 72px 0;
+    }
+
+
+
+    /*-------------
+        Service
+    -------------*/
+    .service
+    {
+        margin-bottom: 72px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 72px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .contacts_info .data > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+    .contacts_info .department
+    {
+        width: 100%;
+    }
+
+    .contacts_info .department > * + *
+    {
+        margin-top: 12px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+}

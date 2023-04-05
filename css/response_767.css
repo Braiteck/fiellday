@@ -1,0 +1,180 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 14px;
+        --font_size_title: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 12px 0;
+    }
+
+
+    header .logo img
+    {
+        height: 26px;
+    }
+
+
+    header .anchors
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Block head
+    ----------------*/
+    .block_head
+    {
+        padding-right: 24px;
+    }
+
+
+    .block_head .title:after
+    {
+        width: 24px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .slogan
+    {
+        font-size: 13px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 17px;
+    }
+
+
+    .first_section .bg
+    {
+        right: -24px;
+
+        margin-right: 0;
+    }
+
+    .first_section .img
+    {
+        top: 100px;
+        left: -60px;
+
+        width: 520px;
+    }
+
+
+    .first_section .logo
+    {
+        top: auto;
+        right: 0;
+        bottom: -68px;
+
+        width: 112px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 80px;
+        padding: 80px 0;
+    }
+
+    .catalog:after
+    {
+        width: 120px;
+        height: 35px;
+    }
+
+
+    .catalog .row
+    {
+        margin-bottom: -60px;
+        margin-left: 0;
+
+        --catalog_count: 1;
+    }
+
+    .catalog .row > *
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 60px;
+        margin-left: 0;
+    }
+
+
+    .catalog .bg
+    {
+        height: auto;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .data
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .data .title,
+    .contacts_info .data .logo
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .contacts_info .department
+    {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+
+    .contacts_info .socials
+    {
+        width: 100%;
+    }
+
+
+    .contacts_info .map
+    {
+        width: 100%;
+        height: 320px;
+        margin-top: 40px;
+    }
+}

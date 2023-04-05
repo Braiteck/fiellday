@@ -1,0 +1,173 @@
+@media print,
+(max-width: 1359px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 16px;
+        --font_size_title: 30px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 36px;
+    }
+
+
+    header .anchors > * + *
+    {
+        margin-left: 64px;
+    }
+
+
+    header .anchors .btn
+    {
+        font-size: 17px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section .data
+    {
+        height: 352px;
+    }
+
+
+    .first_section .slogan
+    {
+        padding: 16px 0;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 22px;
+    }
+
+
+    .first_section .bg
+    {
+        margin-right: -300px;
+    }
+
+
+    .first_section .logo
+    {
+        right: 40px;
+
+        width: 280px;
+        height: auto;
+        margin-right: 0;
+    }
+
+
+    .first_section .img
+    {
+        top: 188px;
+        left: -88px;
+
+        width: 940px;
+        height: auto;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 100px;
+        padding: 172px 0 140px;
+    }
+
+
+    .catalog .item .name
+    {
+        font-size: 28px;
+    }
+
+
+    .catalog .item .desc
+    {
+        font-size: 20px;
+    }
+
+
+    .catalog .item .btn
+    {
+        font-size: 21px;
+
+        margin-top: 40px;
+    }
+
+
+    .catalog .bg
+    {
+        left: -20%;
+
+        width: 140%;
+    }
+
+    .catalog .bg.loaded
+    {
+        opacity: .6;
+    }
+
+
+
+    /*-------------
+        Service
+    -------------*/
+    .service
+    {
+        margin-bottom: 100px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 100px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .department
+    {
+        margin-left: 80px;
+    }
+
+
+    .contacts_info .map
+    {
+        height: 440px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 48px;
+    }
+}

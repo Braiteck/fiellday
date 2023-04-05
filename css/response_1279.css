@@ -1,0 +1,221 @@
+@media print,
+(max-width: 1279px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title: 28px;
+    }
+
+
+    html.custom_scroll ::-webkit-scrollbar
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        height: 32px;
+    }
+
+
+    header .anchors > * + *
+    {
+        margin-left: 48px;
+    }
+
+
+    header .anchors .btn
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-bottom: 124px;
+    }
+
+
+    .first_section .data
+    {
+        height: 300px;
+    }
+
+
+    .first_section .title
+    {
+        font-size: 20px;
+    }
+
+
+    .first_section .bg
+    {
+        margin-right: -320px;
+    }
+
+
+    .first_section .logo
+    {
+        top: 92px;
+        right: 0;
+
+        width: 220px;
+    }
+
+
+    .first_section .img
+    {
+        top: 148px;
+        left: -80px;
+
+        width: 800px;
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        margin-bottom: 100px;
+        padding: 140px 0 100px;
+    }
+
+
+    .catalog .row
+    {
+        margin-left: -48px;
+    }
+
+    .catalog .row > *
+    {
+        max-width: calc(33.333% - 48px);
+        margin-left: 48px;
+    }
+
+
+    .catalog .item .thumb
+    {
+        width: 144px;
+        height: 144px;
+        margin-bottom: 24px;
+    }
+
+    .catalog .item .thumb img
+    {
+        transform: scale(.9) translate(calc(-5% - 1px), calc(-5% - 1px));
+    }
+
+
+    .catalog .item .name
+    {
+        font-size: 25px;
+    }
+
+
+    .catalog .item .desc
+    {
+        font-size: 18px;
+    }
+
+
+    .catalog .item .btn
+    {
+        font-size: 20px;
+
+        width: 168px;
+        height: 52px;
+    }
+
+
+    .catalog .bg
+    {
+        left: 0;
+
+        width: 100%;
+    }
+
+    .catalog .bg.loaded
+    {
+        opacity: .4;
+    }
+
+
+
+    /*-------------
+        Service
+    -------------*/
+    .service
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .row + .row
+    {
+        margin-top: 40px;
+    }
+
+
+    .contacts_info .department
+    {
+        width: auto;
+        min-width: 204px;
+    }
+
+
+    .contacts_info .map
+    {
+        width: calc(100% - 312px);
+        height: 360px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .anchors
+    {
+        width: calc(100% - 312px);
+    }
+}
