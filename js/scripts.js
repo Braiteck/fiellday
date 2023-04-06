@@ -5,6 +5,30 @@ BODY = document.getElementsByTagName('body')[0]
 
 
 document.addEventListener('DOMContentLoaded', function () {
+	// Каталог
+	$('.catalog .item .btn').click(function(e) {
+		e.preventDefault()
+
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active')
+			$('.catalog_info').slideUp(300)
+		} else {
+			$('.catalog .item .btn').removeClass('active')
+			$('.catalog_info').hide()
+
+			$(this).addClass('active')
+			$('.catalog_info.' + $(this).data('content')).slideDown(300)
+
+			setTimeout(() => {
+				document.getElementById($(this).data('content')).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				}, 1000)
+			}, 50)
+		}
+	})
+
+
 	// Плавная прокрутка к якорю
 	const scrollBtns = document.querySelectorAll('.scroll_btn')
 

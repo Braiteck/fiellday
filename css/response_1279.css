@@ -82,7 +82,10 @@
     {
         top: 92px;
         right: 0;
+    }
 
+    .first_section .logo img
+    {
         width: 220px;
     }
 
@@ -207,6 +210,38 @@
     {
         width: calc(100% - 312px);
         height: 360px;
+    }
+
+
+
+    /*------------------
+        Catalog info
+    ------------------*/
+    .catalog_info
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*-------------------------
+        Catalog spare parts
+    -------------------------*/
+    .catalog_spare_parts .col
+    {
+        width: 50%;
+    }
+
+    .catalog_spare_parts .col:nth-child(2) ~ .col
+    {
+        margin-top: 32px;
+    }
+
+
+    .catalog_spare_parts .col_thumb
+    {
+        width: 142px;
+        min-width: 142px;
     }
 
 

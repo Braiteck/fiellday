@@ -47,7 +47,10 @@
     .first_section .logo
     {
         bottom: -44px;
+    }
 
+    .first_section .logo img
+    {
         width: 88px;
     }
 
@@ -111,7 +114,25 @@
 
 
 
-    /*------------
-        Footer
-    ------------*/
+    /*----------------------
+        Catalog services
+    ----------------------*/
+    .catalog_services .name
+    {
+        font-size: 16px;
+
+        padding: 12px 20px;
+    }
+
+
+    .catalog_services .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .catalog_services .item .desc ul li:before
+    {
+        top: 8px;
+    }
 }

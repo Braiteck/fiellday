@@ -65,9 +65,13 @@
     {
         right: 40px;
 
+        margin-right: 0;
+    }
+
+    .first_section .logo img
+    {
         width: 280px;
         height: auto;
-        margin-right: 0;
     }
 
 
@@ -159,6 +163,16 @@
     .contacts_info .map
     {
         height: 440px;
+    }
+
+
+
+    /*------------------
+        Catalog info
+    ------------------*/
+    .catalog_info
+    {
+        margin-bottom: 100px;
     }
 
 

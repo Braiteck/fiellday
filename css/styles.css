@@ -597,13 +597,54 @@ header .anchors .btn:hover
     top: 112px;
     right: 50%;
 
+    overflow: hidden;
+
+    margin-right: -672px;
+
+    pointer-events: none;
+}
+
+.first_section .logo img
+{
     display: block;
 
     width: 324px;
     height: 331px;
-    margin-right: -672px;
+}
 
-    pointer-events: none;
+.first_section .logo:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 100%;
+
+    content: '';
+    transform: translateX(-10em) skewX(-45deg);
+    animation: move-light 3s infinite 1s;
+
+    background: rgba(255, 255, 255, .4);
+
+    filter: blur(10px);
+}
+
+@keyframes move-light
+{
+    0%
+    {
+        transform: translateX(-10em) skewX(-45deg);
+    }
+    25%
+    {
+        transform: translateX(25em) skewX(-45deg);
+    }
+
+    100%
+    {
+        transform: translateX(25em) skewX(-45deg);
+    }
 }
 
 
@@ -627,19 +668,32 @@ header .anchors .btn:hover
 .catalog:after
 {
     position: absolute;
-    top: 100%;
     right: 0;
+    bottom: -45px;
     left: 0;
 
     display: block;
 
-    width: 154px;
-    height: 45px;
+    width: 170px;
+    height: 170px;
     margin: auto;
 
     content: '';
+    -webkit-animation: spin 10s linear infinite;
+       -moz-animation: spin 10s linear infinite;
+            animation: spin 10s linear infinite;
 
     background: url(../images/bg_catalog_after.png) 0 0/100% 100% no-repeat;
+}
+
+
+@keyframes spin
+{
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
 }
 
 
@@ -675,9 +729,6 @@ header .anchors .btn:hover
     width: 161px;
     height: 161px;
     margin: 0 auto 28px;
-
-    border-radius: 50%;
-    background: #fc0;
 }
 
 .catalog .item .thumb img
@@ -745,7 +796,8 @@ header .anchors .btn:hover
     transform: skewX(33deg);
 }
 
-.catalog .item .btn:hover
+.catalog .item .btn:hover,
+.catalog .item .btn.active
 {
     background: #bfbfbf;
 }
@@ -772,6 +824,358 @@ header .anchors .btn:hover
 
 
 
+/*------------------
+    Catalog info
+------------------*/
+.catalog_info
+{
+    display: none;
+
+    margin-bottom: 112px;
+}
+
+
+.catalog_info .img
+{
+    display: block;
+
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/*-------------------------
+    Catalog spare parts
+-------------------------*/
+.catalog_spare_parts .col
+{
+    width: 25%;
+}
+
+
+.catalog_spare_parts .titles
+{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    margin-bottom: 8px;
+    padding: 8px 20px 6px;
+
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    word-break: break-all;
+
+    border-bottom: 2px solid #989279;
+    background: #fc0;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.catalog_spare_parts .titles > * + *
+{
+    margin-left: 8px;
+}
+
+.catalog_spare_parts .col:last-child .titles:after
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: block;
+
+    width: 26px;
+    height: 100%;
+
+    content: '';
+
+    background: #fc0;
+
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+
+.catalog_spare_parts .product
+{
+    position: relative;
+
+    display: flex;
+
+    padding: 8px 20px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.catalog_spare_parts .product > * + *
+{
+    margin-left: 8px;
+}
+
+
+
+.catalog_spare_parts .product .col_thumb
+{
+    display: flex;
+
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.catalog_spare_parts .product .col_thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    filter: drop-shadow(0 0 24px rgba(0,0,0,.42));
+}
+
+
+.catalog_spare_parts .product .number
+{
+    color: #4c4e58;
+    font-size: 13px;
+    font-weight: 700;
+
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    left: 20px;
+
+    white-space: nowrap;
+}
+
+
+.catalog_spare_parts .product .col_name
+{
+    color: #4c4e58;
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.catalog_spare_parts .product .col_unit
+{
+    color: #4c4e58;
+    font-size: 13px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.catalog_spare_parts .product .col_price
+{
+    color: #4c4e58;
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.catalog_spare_parts .product .col_price span
+{
+    font-size: 13px;
+}
+
+
+.catalog_spare_parts .col_thumb
+{
+    width: 112px;
+    min-width: 112px;
+}
+
+.catalog_spare_parts .col_name
+{
+    width: 100%;
+}
+
+.catalog_spare_parts .col_unit
+{
+    width: 32px;
+    min-width: 32px;
+}
+
+.catalog_spare_parts .col_price
+{
+    width: 40px;
+    min-width: 40px;
+}
+
+
+
+/*----------------------
+    Catalog services
+----------------------*/
+.catalog_services .item
+{
+    width: 890px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.catalog_services .name
+{
+    color: #fc0;
+    font-size: 20px;
+    font-weight: 700;
+
+    position: relative;
+
+    margin-bottom: 12px;
+    padding: 12px 72px;
+
+    letter-spacing: .025em;
+    text-transform: uppercase;
+
+    background: #4c4e58;
+}
+
+.catalog_services .name:after
+{
+    position: absolute;
+    top: 0;
+    left: 100%;
+
+    display: block;
+
+    width: 26px;
+    height: 100%;
+
+    content: '';
+
+    background: #4c4e58;
+
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+
+.catalog_services .item + .item
+{
+    margin-top: 24px;
+}
+
+
+.catalog_services .item .row
+{
+    justify-content: space-between;
+}
+
+.catalog_services .item .row .desc
+{
+    width: calc(100% - 486px);
+    margin: 0;
+}
+
+.catalog_services .item .row .image
+{
+    width: 462px;
+}
+
+
+.catalog_services .item .desc
+{
+    font-size: 19px;
+    font-weight: 700;
+
+    margin-bottom: 16px;
+}
+
+.catalog_services .item .desc > * + *
+{
+    margin-top: 16px;
+}
+
+
+.catalog_services .item .desc ul li
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    padding-left: 16px;
+
+    list-style-type: none;
+}
+
+.catalog_services .item .desc ul li + li
+{
+    margin-top: 4px;
+}
+
+.catalog_services .item .desc ul li:before
+{
+    position: absolute;
+    top: 9px;
+    left: 0;
+
+    display: block;
+
+    width: 5px;
+    height: 5px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: var(--text_color);
+}
+
+
+.catalog_services .item .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    background: #ddd;
+}
+
+.catalog_services .item .image img
+{
+    display: block;
+
+    width: 100%;
+}
+
+
+.catalog_services .bottom
+{
+    font-size: 19px;
+    font-weight: 700;
+
+    width: 800px;
+    max-width: 100%;
+    margin: 24px auto 0;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
 /*-------------
     Service
 -------------*/
@@ -788,6 +1192,15 @@ header .anchors .btn:hover
 .about_info
 {
     margin-bottom: 112px;
+}
+
+
+.about_info video
+{
+    display: block;
+
+    width: 100%;
+    margin-bottom: 24px;
 }
 
 

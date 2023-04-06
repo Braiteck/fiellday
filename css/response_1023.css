@@ -102,7 +102,10 @@
     {
         top: 148px;
         right: -8px;
+    }
 
+    .first_section .logo img
+    {
         width: 140px;
     }
 
@@ -207,6 +210,46 @@
     .contacts_info .map
     {
         width: calc(100% - 220px);
+    }
+
+
+
+    /*-------------------------
+        Catalog spare parts
+    -------------------------*/
+    .catalog_spare_parts .col_thumb
+    {
+        width: 116px;
+        min-width: 116px;
+    }
+
+
+
+    /*----------------------
+        Catalog services
+    ----------------------*/
+    .catalog_services .name
+    {
+        font-size: 18px;
+
+        padding: 12px 40px;
+    }
+
+
+    .catalog_services .item .desc
+    {
+        font-size: 18px;
+    }
+
+    .catalog_services .item .row .desc
+    {
+        width: calc(100% - 420px);
+    }
+
+
+    .catalog_services .item .row .image
+    {
+        width: 400px;
     }
 
 

@@ -39,13 +39,20 @@
     ----------------*/
     .block_head
     {
-        padding-right: 24px;
+        padding-right: 48px;
     }
 
 
+    .block_head .title
+    {
+        padding: 16px 0;
+
+        text-align: left;
+    }
+
     .block_head .title:after
     {
-        width: 24px;
+        width: 48px;
     }
 
 
@@ -96,7 +103,10 @@
         top: auto;
         right: 0;
         bottom: -68px;
+    }
 
+    .first_section .logo img
+    {
         width: 112px;
     }
 
@@ -113,8 +123,10 @@
 
     .catalog:after
     {
+        bottom: -35px;
+
         width: 120px;
-        height: 35px;
+        height: 120px;
     }
 
 
@@ -176,5 +188,91 @@
         width: 100%;
         height: 320px;
         margin-top: 40px;
+    }
+
+
+
+    /*-------------------------
+        Catalog spare parts
+    -------------------------*/
+    .catalog_spare_parts .col
+    {
+        width: 100%;
+    }
+
+    .catalog_spare_parts .col + .col
+    {
+        margin-top: 32px;
+    }
+
+
+    .catalog_spare_parts .titles
+    {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .catalog_spare_parts .col:last-child .titles:after
+    {
+        display: none;
+    }
+
+
+    .catalog_spare_parts .product
+    {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+
+    .catalog_spare_parts .col_thumb
+    {
+        width: 112px;
+        min-width: 112px;
+    }
+
+
+    .catalog_spare_parts .product .number
+    {
+        left: 8px;
+    }
+
+
+
+    /*----------------------
+        Catalog services
+    ----------------------*/
+    .catalog_services .name
+    {
+        font-size: 17px;
+
+        width: calc(100% - 28px);
+        padding: 12px 24px;
+    }
+
+
+    .catalog_services .item + .item
+    {
+        margin-top: 40px;
+    }
+
+
+    .catalog_services .item .desc
+    {
+        font-size: 17px;
+    }
+
+    .catalog_services .item .row .desc
+    {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .catalog_services .item .row .image
+    {
+        width: 100%;
+
+        order: 2;
     }
 }
