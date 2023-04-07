@@ -612,7 +612,7 @@ header .anchors .btn:hover
 {
     position: absolute;
     z-index: 2;
-    top: 112px;
+    top: 120px;
     right: 50%;
 
     overflow: hidden;
@@ -627,7 +627,7 @@ header .anchors .btn:hover
     display: block;
 
     width: 324px;
-    height: 331px;
+    height: 324px;
 }
 
 .first_section .logo:before
