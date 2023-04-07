@@ -89,12 +89,22 @@
         margin-right: 0;
     }
 
+
     .first_section .img
     {
         top: 100px;
         left: -60px;
 
         width: 520px;
+    }
+
+
+    .first_section .exp
+    {
+        bottom: -88px;
+        left: 0;
+
+        margin-left: 0;
     }
 
 

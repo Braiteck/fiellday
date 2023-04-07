@@ -44,6 +44,14 @@
     }
 
 
+    .first_section .exp
+    {
+        font-size: 12px;
+
+        bottom: -60px;
+    }
+
+
     .first_section .logo
     {
         bottom: -44px;
