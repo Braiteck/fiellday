@@ -324,6 +324,21 @@ button
     transition-delay: .9s;
 }
 
+.animate.delay4
+{
+    transition-delay: 1.2s;
+}
+
+.animate.delay5
+{
+    transition-delay: 1.5s;
+}
+
+.animate.delay6
+{
+    transition-delay: 1.8s;
+}
+
 .animate.animated
 {
     transform: none;
@@ -1246,73 +1261,36 @@ header .anchors .btn:hover
 
 .contacts_info .row
 {
-    justify-content: space-between;
+    margin-bottom: -40px;
+    margin-left: -40px;
+
+    align-items: stretch;
+    align-content: stretch;
 }
 
 .contacts_info .row + .row
 {
     margin-top: 48px;
-}
-
-
-.contacts_info .data
-{
-    width: 320px;
-    max-width: 100%;
-    margin-right: auto;
-
-    letter-spacing: .01em;
-}
-
-.contacts_info .data > * + *
-{
-    margin-top: 20px;
-}
-
-
-.contacts_info .data .title
-{
-    color: #404040;
-    font-family: 'Arial Narrow';
-    font-size: 24px;
-
-    margin-bottom: 32px;
-}
-
-
-.contacts_info .data .logo
-{
-    margin-bottom: 32px;
-}
-
-.contacts_info .data .logo img
-{
-    display: block;
-
-    height: 24px;
-}
-
-
-.contacts_info .data .phone a
-{
-    color: currentColor;
-
-    white-space: nowrap;
-    text-decoration: none;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 
 
 .contacts_info .department
 {
-    width: 280px;
-    max-width: 100%;
-    margin-left: 100px;
+    font-family: 'Arial Narrow';
+
+    width: calc(20% - 40px);
+    margin-bottom: 40px;
+    margin-left: 40px;
+
+    letter-spacing: .01em;
 }
 
 .contacts_info .department > * + *
 {
-    margin-top: 20px;
+    margin-top: 16px;
 }
 
 
@@ -1320,6 +1298,37 @@ header .anchors .btn:hover
 {
     color: #fc0;
     font-size: 18px;
+}
+
+
+.contacts_info .department .regions
+{
+    font-size: 18px;
+}
+
+
+.contacts_info .department .regions > *
+{
+    position: relative;
+
+    padding-left: 12px;
+}
+
+.contacts_info .department .regions > *:before
+{
+    position: absolute;
+    top: 10px;
+    left: 0;
+
+    display: block;
+
+    width: 4px;
+    height: 4px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: currentColor;
 }
 
 
@@ -1334,15 +1343,68 @@ header .anchors .btn:hover
 {
     color: currentColor;
 
-    white-space: nowrap;
     text-decoration: none;
+}
+
+
+
+.contacts_info .col_left
+{
+    display: flex;
+
+    width: 328px;
+    max-width: 100%;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.contacts_info .col_left .department
+{
+    width: 100%;
+    margin: 0 0 auto;
+}
+
+
+
+.contacts_info .data
+{
+    font-family: 'Arial Narrow';
+    font-size: 14px;
+
+    letter-spacing: .01em;
+}
+
+.contacts_info .data > * + *
+{
+    margin-top: 16px;
+}
+
+
+.contacts_info .data .title
+{
+    color: #404040;
+    font-size: 24px;
+}
+
+
+.contacts_info .data .logo img
+{
+    display: block;
+
+    height: 24px;
 }
 
 
 
 .contacts_info .socials
 {
-    align-self: center;
+    width: 100%;
+    margin-top: auto;
 }
 
 
@@ -1399,7 +1461,7 @@ header .anchors .btn:hover
     overflow: hidden;
 
     width: calc(100% - 356px);
-    height: 500px;
+    height: 540px;
     margin-left: auto;
 
     background: #ddd;
@@ -1418,6 +1480,17 @@ header .anchors .btn:hover
     height: 100%;
 
     border: none;
+}
+
+
+.contacts_info .map #map
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
 }
 
 

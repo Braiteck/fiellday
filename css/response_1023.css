@@ -191,36 +191,27 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .data
+    .contacts_info .department
     {
-        width: 256px;
+        width: calc(33.333% - 40px);
+    }
+
+
+    .contacts_info .col_left
+    {
+        width: 284px;
     }
 
 
     .contacts_info .data .title
     {
         font-size: 22px;
-
-        margin-bottom: 28px;
-    }
-
-
-    .contacts_info .data .logo
-    {
-        margin-bottom: 28px;
-    }
-
-
-    .contacts_info .department
-    {
-        min-width: 0;
-        margin-left: 48px;
     }
 
 
     .contacts_info .map
     {
-        width: calc(100% - 220px);
+        width: calc(100% - 308px);
     }
 
 

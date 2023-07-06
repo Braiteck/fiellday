@@ -11,6 +11,17 @@
     }
 
 
+    .animate.delay,
+    .animate.delay2,
+    .animate.delay3,
+    .animate.delay4,
+    .animate.delay5,
+    .animate.delay6
+    {
+        transition-delay: 0s !important;
+    }
+
+
 
     /*------------
         Header
@@ -168,29 +179,27 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .data
+    .contacts_info .row + .row
     {
-        width: 100%;
-    }
-
-
-    .contacts_info .data .title,
-    .contacts_info .data .logo
-    {
-        margin-bottom: 24px;
+        margin-top: 40px;
     }
 
 
     .contacts_info .department
     {
-        margin-top: 40px;
-        margin-left: 0;
+        width: calc(50% - 40px);
+    }
+
+    .contacts_info .department .name
+    {
+        font-size: 16px;
     }
 
 
+    .contacts_info .data,
     .contacts_info .socials
     {
-        width: 100%;
+        margin-top: 40px;
     }
 
 

@@ -154,15 +154,9 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .department
-    {
-        margin-left: 80px;
-    }
-
-
     .contacts_info .map
     {
-        height: 440px;
+        height: 520px;
     }
 
 

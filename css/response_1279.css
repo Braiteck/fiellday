@@ -204,23 +204,33 @@
     /*-------------------
         Contacts info
     -------------------*/
-    .contacts_info .row + .row
+    .contacts_info .department .regions
     {
-        margin-top: 40px;
+        font-size: 16px;
+    }
+
+    .contacts_info .department .regions > *:before
+    {
+        top: 8px;
     }
 
 
-    .contacts_info .department
+    .contacts_info .department .phone .val > * + *
     {
-        width: auto;
-        min-width: 204px;
+        margin-top: 8px;
+    }
+
+
+    .contacts_info .col_left
+    {
+        width: 308px;
     }
 
 
     .contacts_info .map
     {
-        width: calc(100% - 312px);
-        height: 360px;
+        width: calc(100% - 340px);
+        height: 460px;
     }
 
 

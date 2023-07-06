@@ -105,20 +105,16 @@
     }
 
 
-    .contacts_info .data > * + *
+    .contacts_info .row
     {
-        margin-top: 12px;
+        margin-left: 0;
     }
 
 
     .contacts_info .department
     {
         width: 100%;
-    }
-
-    .contacts_info .department > * + *
-    {
-        margin-top: 12px;
+        margin-left: 0;
     }
 
 
